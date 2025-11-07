@@ -1,1 +1,31 @@
-<p>login works!</p>
+<div class="login d-flex justify-content-center align-items-center">
+    <div class="login-form w-75">
+        <h1 class="fs-2">Login</h1>
+
+        <form class="mt-4">
+            <div class="mb-3">
+                <label for="email" class="form-label">email</label>
+                <input type="email" class="form-control" id="email" placeholder="ahmedshaaban123321@gmail.com">
+            </div>
+
+            <div class="mb-3 position-relative">
+                <label for="password" class="form-label">password</label>
+                <input [type]="showPassword ? 'text' : 'password'" class="form-control" id="password"
+                    placeholder="********">
+                <i [class]="showPassword ? 'fas fa-eye-slash' : 'fas fa-eye'" class="password-toggle"
+                    (click)="togglePasswordVisibility()">
+                </i>
+            </div>
+
+            <div class="Forgot-password text-end">
+                <p class="primary-color cursor-pointer" routerLink="/forgot-password">Forgot your password?</p>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 rounded-0 mt-3">Create Account</button>
+        </form>
+
+        <div class="register mt-4 text-center">
+            <p>Already have an account? <span class="primary-color cursor-pointer" routerLink="/register">Create yours</span></p>
+        </div>
+    </div>
+</div>
