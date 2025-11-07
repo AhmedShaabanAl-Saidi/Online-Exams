@@ -1,1 +1,57 @@
-<p>register works!</p>
+<div class="register d-flex justify-content-center align-items-center py-5">
+    <div class="register-form w-75">
+        <h1 class="fs-2">Create Account</h1>
+
+        <form class="mt-4">
+            <div class="form-name d-flex gap-3">
+                <div class="mb-3 w-50">
+                    <label for="first-name" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="first-name" placeholder="Ahmed">
+                </div>
+                <div class="mb-3 w-50">
+                    <label for="last-name" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="last-name" placeholder="Al-saidi">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="user-name" class="form-label">user name</label>
+                <input type="text" class="form-control" id="user-name" placeholder="Ahmed123">
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">email</label>
+                <input type="email" class="form-control" id="email" placeholder="ahmedshaaban123321@gmail.com">
+            </div>
+
+            <div class="mb-3">
+                <label for="phone" class="form-label">phone</label>
+                <input type="tel" class="form-control" id="phone" placeholder="01067671981">
+            </div>
+
+            <div class="mb-3 position-relative">
+                <label for="password" class="form-label">password</label>
+                <input [type]="showPassword ? 'text' : 'password'" class="form-control" id="password"
+                    placeholder="********">
+                <i [class]="showPassword ? 'fas fa-eye-slash' : 'fas fa-eye'" class="password-toggle"
+                    (click)="togglePasswordVisibility()">
+                </i>
+            </div>
+
+            <div class="mb-3 position-relative">
+                <label for="Confirm-Password" class="form-label">Confirm Password</label>
+                <input [type]="showConfirmPassword ? 'text' : 'password'" class="form-control" id="Confirm-Password"
+                    placeholder="********">
+                <i [class]="showConfirmPassword ? 'fas fa-eye-slash' : 'fas fa-eye'" class="password-toggle"
+                    (click)="toggleConfirmPasswordVisibility()">
+                </i>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 rounded-0 mt-3">Create Account</button>
+        </form>
+
+        <div class="login mt-4 text-center">
+            <p>Already have an account? <span class="primary-color cursor-pointer" routerLink="/login">Login</span></p>
+        </div>
+    </div>
+</div>

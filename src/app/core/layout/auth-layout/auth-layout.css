@@ -8,7 +8,6 @@
             #bddff5 100%);
 }
 
-.static-content,
-.dynamic-content {
+.static-content {
     min-height: 100vh;
 }

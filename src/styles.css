@@ -29,3 +29,43 @@ h6 {
 .gray-color {
     color: var(--gray-color) !important;
 }
+
+.btn-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color) !important;
+}
+
+.form-control {
+    border: 2px solid #dee2e6;
+    border-radius: 0;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 44px;
+    cursor: pointer;
+    color: #6c757d;
+    transition: color 0.3s ease;
+}
+
+.password-toggle:hover {
+    color: #495057;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+@media (max-width: 991.98px) {
+    .w-75 {
+        width: 95% !important;
+    }
+}
