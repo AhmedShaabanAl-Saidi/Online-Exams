@@ -1,1 +1,57 @@
-<router-outlet></router-outlet>
+<div class="auth-layout text-capitalize">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                <div class="static-content d-flex flex-column justify-content-center gap-4">
+                    <div class="logo d-flex align-items-center gap-1 pb-5">
+                        <img src="icons/logo.png" alt="logo">
+                        <span class="primary-color fw-bold">Exam App</span>
+                    </div>
+
+                    <div class="header pb-3">
+                        <h1 class="fs-3 fw-semibold secondary-color">Empower your learning journey <br> with our smart exam platform.
+                        </h1>
+                    </div>
+
+                    <div class="features d-flex flex-column gap-4">
+                        <div class="feature-item d-flex gap-3">
+                            <div class="feature-img">
+                                <img src="icons/feature-icon1.png" alt="feature-icon1">
+                            </div>
+                            <div class="content">
+                                <p class="primary-color fs-5 fw-semibold my-0">Tailored Diplomas</p>
+                                <p class="gray-color my-0">Choose from specialized tracks like <br> Frontend, Backend, and
+                                    Mobile <br> Development.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item d-flex gap-3">
+                            <div class="feature-img">
+                                <img src="icons/feature-icon2.png" alt="feature-icon2">
+                            </div>
+                            <div class="content">
+                                <p class="primary-color fs-5 fw-semibold my-0">Focused Exams</p>
+                                <p class="gray-color my-0">Access topic-specific tests including <br> HTML, CSS,
+                                    JavaScript,
+                                    and more.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item d-flex gap-3">
+                            <div class="feature-img">
+                                <img src="icons/feature-icon3.png" alt="feature-icon3">
+                            </div>
+                            <div class="content">
+                                <p class="primary-color fs-5 fw-semibold my-0">Smart Multi-Step Forms</p>
+                                <p class="gray-color my-0">Choose from specialized tracks like <br> Frontend, Backend, and
+                                    Mobile <br> Development.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="dynamic-content">
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+        </div>
+    </div>

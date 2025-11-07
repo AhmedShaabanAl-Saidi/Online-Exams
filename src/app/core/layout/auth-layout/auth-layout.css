@@ -1,0 +1,14 @@
+.col-lg-6:first-child {
+    background: linear-gradient(180deg,
+            #e8f4fd 0%,
+            #e3f2fc 20%,
+            #ddf0fb 40%,
+            #d4ebf9 60%,
+            #c9e5f7 80%,
+            #bddff5 100%);
+}
+
+.static-content,
+.dynamic-content {
+    min-height: 100vh;
+}
