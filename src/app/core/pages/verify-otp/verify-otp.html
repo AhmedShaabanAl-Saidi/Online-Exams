@@ -1,1 +1,42 @@
-<p>verify-otp works!</p>
+<div class="verify-otp d-flex justify-content-center align-items-center">
+    <div class="verify-otp-form w-75">
+        <div class="previous-step py-1 px-2 cursor-pointer" routerLink="/forgot-password">
+            <i class="fa-solid fa-arrow-left"></i>
+        </div>
+
+        <h1 class="fs-2 fw-bold mt-5">Verify OTP</h1>
+
+        <div class="verify-otp-info">
+            <p class="text-muted my-0">Please enter the 6-digits code we have sent to:</p>
+            <p class="my-0">user@example.com. <span class="primary-color cursor-pointer">Edit</span></p>
+        </div>
+
+        <form class="mt-4">
+            <div class="timer mt-4 text-center">
+                <p class="text-muted">You can request another code in: <span class="primary-color">60s</span></p>
+            </div>
+
+            <div class="otp-container">
+                <input type="text" class="otp-input" maxlength="1" pattern="[0-9]" inputmode="numeric"
+                    autocomplete="off">
+                <input type="text" class="otp-input" maxlength="1" pattern="[0-9]" inputmode="numeric"
+                    autocomplete="off">
+                <input type="text" class="otp-input" maxlength="1" pattern="[0-9]" inputmode="numeric"
+                    autocomplete="off">
+                <input type="text" class="otp-input" maxlength="1" pattern="[0-9]" inputmode="numeric"
+                    autocomplete="off">
+                <input type="text" class="otp-input" maxlength="1" pattern="[0-9]" inputmode="numeric"
+                    autocomplete="off">
+                <input type="text" class="otp-input" maxlength="1" pattern="[0-9]" inputmode="numeric"
+                    autocomplete="off">
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 rounded-0 mt-3">Verify Code</button>
+        </form>
+
+        <div class="register mt-4 text-center">
+            <p>Don’t have an account? <span class="primary-color cursor-pointer" routerLink="/register">Create
+                    yours</span></p>
+        </div>
+    </div>
+</div>
