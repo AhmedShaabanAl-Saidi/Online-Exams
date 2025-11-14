@@ -25,8 +25,14 @@
             </div>
 
             <div class="mb-3">
-                <label for="phone" class="form-label">phone</label>
-                <input type="tel" class="form-control" id="phone" placeholder="01067671981">
+                <label for="phone" class="form-label">Phone</label>
+                <div class="phone-input-wrapper position-relative">
+                    <div class="country-selector d-flex align-items-center gap-1 px-2 py-1 border-end">
+                        <img src="images/egypt-flag.png" alt="Egypt Flag">
+                        <span class="country-code">EG</span>
+                    </div>
+                    <input type="tel" id="phone" class="form-control phone-input-field" placeholder="01067671981">
+                </div>
             </div>
 
             <div class="mb-3 position-relative">
