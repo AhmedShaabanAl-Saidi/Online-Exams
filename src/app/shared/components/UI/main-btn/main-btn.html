@@ -1,0 +1,20 @@
+<button type="button" class="btn btn-primary w-100 rounded-0 mt-3" [disabled]="disabled() || loading()"
+    (click)="onClick.emit($event)">
+
+    <!-- Loading Spinner -->
+    @if (loading()) {
+    <span class="spinner-border spinner-border-sm me-2" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </span>
+    }
+
+    @if (icon() && iconPosition() === 'left' && !loading()) {
+    <i [class]="'fa-solid ' + icon() + ' me-2'"></i>
+    }
+
+    <span>{{ text() }}</span>
+
+    @if (icon() && iconPosition() === 'right' && !loading()) {
+    <i [class]="'fa-solid ' + icon() + ' ms-2'"></i>
+    }
+</button>

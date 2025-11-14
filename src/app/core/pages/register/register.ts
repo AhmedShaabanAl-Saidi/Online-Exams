@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { MainBtn } from '../../../shared/components/UI/main-btn/main-btn';
 
 @Component({
   selector: 'app-register',
-  imports: [RouterLink],
+  imports: [RouterLink, MainBtn],
   templateUrl: './register.html',
   styleUrl: './register.css',
 })
