@@ -1,0 +1,18 @@
+.register {
+    min-height: 100vh;
+}
+
+.phone-input-wrapper {
+    display: flex;
+}
+
+.country-selector {
+    background-color: #f8f9fa;
+    border: 2px solid #dee2e6;
+}
+
+.country-selector img {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: cover;
+}

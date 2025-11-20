@@ -1,0 +1,66 @@
+.verify-otp {
+    min-height: 100vh;
+}
+
+.previous-step {
+    width: fit-content;
+    border: 2px solid #dee2e6;
+    transition: all 0.5 ease;
+}
+
+.previous-step:hover i {
+    color: var(--primary-color) !important;
+}
+
+.otp-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.otp-input {
+    width: 3.5rem;
+    height: 3.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 2px solid #dee2e6;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.otp-input:focus {
+    border-color: var(--primary-color);
+}
+
+@media (max-width: 1399.98px) {
+    .otp-container {
+        gap: .25rem;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .otp-container {
+        gap: .5rem;
+    }
+
+    .otp-input {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .otp-input {
+        .otp-container {
+            gap: .375rem;
+        }
+
+        width: 2.625rem;
+        height: 2.625rem;
+        font-size: 1.125rem;
+    }
+}
