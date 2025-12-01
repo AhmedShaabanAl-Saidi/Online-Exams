@@ -11,5 +11,5 @@ import { Auth } from 'auth';
 export class App {
   protected readonly title = signal('online-exams');
 
-  _ = inject(Auth)
+  _auth = inject(Auth)
 }
