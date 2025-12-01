@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { MainBtn } from '../../../../../shared/components/UI/main-btn/main-btn';
+import { MainBtn } from '../../../../shared/components/UI/main-btn/main-btn';
 
 @Component({
-  selector: 'app-new-password',
+  selector: 'app-login',
   imports: [RouterLink, MainBtn],
-  templateUrl: './new-password.html',
-  styleUrl: './new-password.css',
+  templateUrl: './login.html',
+  styleUrl: './login.css',
 })
-export class NewPassword {
+export class Login {
   showPassword: boolean = false;
   showConfirmPassword: boolean = false;
 
