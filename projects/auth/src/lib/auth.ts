@@ -1,15 +1,8 @@
-import { Component } from '@angular/core';
+import { Injectable } from '@angular/core';
 
-@Component({
-  selector: 'lib-auth',
-  imports: [],
-  template: `
-    <p>
-      auth works!
-    </p>
-  `,
-  styles: ``,
+@Injectable({
+  providedIn: 'root',
 })
 export class Auth {
-
+  
 }
