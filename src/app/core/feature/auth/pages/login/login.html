@@ -2,16 +2,17 @@
     <div class="login-form w-75">
         <h1 class="fs-2 fw-bold">Login</h1>
 
-        <form class="mt-4">
+        <form class="mt-4" [formGroup]="loginForm" (ngSubmit)="login()">
             <div class="mb-3">
                 <label for="email" class="form-label">email</label>
-                <input type="email" class="form-control" id="email" placeholder="ahmedshaaban123321@gmail.com">
+                <input type="email" class="form-control" id="email" placeholder="ahmedshaaban123321@gmail.com"
+                    formControlName="email">
             </div>
 
             <div class="mb-3 position-relative">
                 <label for="password" class="form-label">password</label>
                 <input [type]="showPassword ? 'text' : 'password'" class="form-control" id="password"
-                    placeholder="********">
+                    placeholder="********" formControlName="password">
                 <i [class]="showPassword ? 'fas fa-eye-slash' : 'fas fa-eye'" class="password-toggle"
                     (click)="togglePasswordVisibility()">
                 </i>
@@ -21,7 +22,8 @@
                 <p class="primary-color cursor-pointer" routerLink="/forgot-password">Forgot your password?</p>
             </div>
 
-            <app-main-btn text="Login"></app-main-btn>
+            <!-- <app-main-btn text="Login"></app-main-btn> -->
+            <button type="submit">login</button>
         </form>
 
         <div class="register mt-4 text-center">

@@ -9,7 +9,7 @@ import { AuthApiAdaptor } from './adaptor/auth-api-adaptor';
   providedIn: 'root',
 })
 export class Auth implements AuthAPI {
-  _httpClient = inject(HttpClient);
+  private _httpClient = inject(HttpClient);
   _authApiAdaptor = inject(AuthApiAdaptor);
 
   login(credentials: any): Observable<any> {
