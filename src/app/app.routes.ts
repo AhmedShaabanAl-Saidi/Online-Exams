@@ -29,16 +29,6 @@ export const routes: Routes = [
                 loadComponent: () => import('./core/pages/auth/forgot-password/forgot-password').then(m => m.ForgotPassword),
                 title: 'Forgot Password'
             },
-            {
-                path: 'verify-otp',
-                loadComponent: () => import('./core/pages/auth/verify-otp/verify-otp').then(m => m.VerifyOTP),
-                title: 'Verify OTP'
-            },
-            {
-                path: 'new-password',
-                loadComponent: () => import('./core/pages/auth/new-password/new-password').then(m => m.NewPassword),
-                title: 'New Password'
-            }
         ]
     },
 
