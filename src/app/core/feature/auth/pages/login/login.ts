@@ -1,20 +1,30 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { MainBtn } from '../../../../../shared/components/UI/main-btn/main-btn';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Auth } from 'auth';
+import { PasswordToggle } from "../components/password-toggle/password-toggle";
 
 @Component({
   selector: 'app-login',
-  imports: [RouterLink, MainBtn, ReactiveFormsModule],
+  imports: [RouterLink, MainBtn, ReactiveFormsModule, PasswordToggle],
   templateUrl: './login.html',
   styleUrl: './login.css',
 })
 export class Login {
-  showPassword: boolean = false;
-  showConfirmPassword: boolean = false;
-
   _auth = inject(Auth);
+
+  password = signal('');
+  showPassword = signal(false);
+
+  togglePasswordVisibility() {
+    this.showPassword.update(v => !v);
+  }
+
+  onPasswordChange(event: Event) {
+    const target = event.target as HTMLInputElement;
+    this.password.set(target.value);
+  }
 
   loginForm: FormGroup = new FormGroup({
     email: new FormControl('', [Validators.required]),
@@ -25,13 +35,5 @@ export class Login {
     this._auth.login(this.loginForm.value).subscribe(res => {
       console.log(res)
     })
-  }
-
-  togglePasswordVisibility() {
-    this.showPassword = !this.showPassword;
-  }
-
-  toggleConfirmPasswordVisibility() {
-    this.showConfirmPassword = !this.showConfirmPassword;
   }
 }
