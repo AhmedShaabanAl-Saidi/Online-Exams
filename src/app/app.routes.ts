@@ -16,28 +16,18 @@ export const routes: Routes = [
         children: [
             {
                 path: 'register',
-                loadComponent: () => import('./core/feature/auth/pages/register/register').then(m => m.Register),
+                loadComponent: () => import('./feature/auth/pages/register/register').then(m => m.Register),
                 title: 'Register'
             },
             {
                 path: 'login',
-                loadComponent: () => import('./core/feature/auth//pages/login/login').then(m => m.Login),
+                loadComponent: () => import('./feature/auth//pages/login/login').then(m => m.Login),
                 title: 'Login'
             },
             {
                 path: 'forgot-password',
-                loadComponent: () => import('./core/feature/auth/pages/forgot-password/forgot-password').then(m => m.ForgotPassword),
+                loadComponent: () => import('./feature/auth/pages/forgot-password/forgot-password').then(m => m.ForgotPassword),
                 title: 'Forgot Password'
-            },
-            {
-                path: 'verify-otp',
-                loadComponent: () => import('./core/feature/auth/pages/verify-otp/verify-otp').then(m => m.VerifyOTP),
-                title: 'Verify OTP'
-            },
-            {
-                path: 'new-password',
-                loadComponent: () => import('./core/feature/auth/pages/new-password/new-password').then(m => m.NewPassword),
-                title: 'New Password'
             }
         ]
     },

@@ -1,7 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { MainBtn } from '../../../../../shared/components/UI/main-btn/main-btn';
-import { PasswordToggle } from "../components/password-toggle/password-toggle";
+import { MainBtn } from '../../../../shared/components/UI/main-btn/main-btn';
+import { PasswordToggle } from '../../components/password-toggle/password-toggle';
 
 @Component({
   selector: 'app-register',

@@ -1,9 +1,9 @@
 import { Component, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { MainBtn } from '../../../../../shared/components/UI/main-btn/main-btn';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Auth } from 'auth';
-import { PasswordToggle } from "../components/password-toggle/password-toggle";
+import { MainBtn } from '../../../../shared/components/UI/main-btn/main-btn';
+import { PasswordToggle } from '../../components/password-toggle/password-toggle';
 
 @Component({
   selector: 'app-login',
