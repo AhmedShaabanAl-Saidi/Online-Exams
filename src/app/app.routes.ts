@@ -39,12 +39,12 @@ export const routes: Routes = [
         children: [
             {
                 path: 'home',
-                loadComponent: () => import('./feature/pages/home/home').then(m => m.Home),
+                loadComponent: () => import('./feature/home/home').then(m => m.Home),
                 title: 'Home'
             },
             {
                 path: '**',
-                loadComponent: () => import('./feature/components/not-found/not-found').then(m => m.NotFound),
+                loadComponent: () => import('./core/pages/not-found/not-found').then(m => m.NotFound),
                 title: 'Page Not Found'
             }
         ]
