@@ -1,3 +1,3 @@
 export interface VerifyResetCodeResponse {
-    resetCode: string;
+    status: string;
 }

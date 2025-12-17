@@ -1,3 +1,3 @@
 export interface VerifyResetCodeDto {
-    code: string
+    resetCode: string
 }
